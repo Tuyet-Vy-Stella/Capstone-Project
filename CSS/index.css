@@ -11,7 +11,7 @@
     top: 40px;
     right: 0;
     left: 0;
-    z-index: 4;
+    z-index: 20;
     background-color: #ffffff;
 }
 .header .container{
@@ -644,14 +644,6 @@
 
 /* ABOUT */
 /* P.1: HEADER */
-.about-header{
-    position: fixed;
-    top: 0px;
-    right: 0;
-    left: 0;
-    z-index: 4;
-    background-color: #ffffff;
-}
 .about-header .container{
     width: 100%;
     padding: 10px 15px;
@@ -1023,6 +1015,11 @@
 
 
 /* BACK TO TOP */
+.cd-top{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s;
+}
 
 .back-to-top{
     position: fixed;
