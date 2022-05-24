@@ -1,0 +1,134 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+html,body{
+    font-family: 'Jost', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+}
+
+
+header{
+    background-color: #fff;
+    padding: 0px;
+    transition: all 0.4s ease 0s;
+    height: 90px;
+    display: grid;
+    align-items: center;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+}
+
+.fixed-top {
+    position: fixed;
+    top: 40px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+header.header{
+    padding: 0px;
+    background-color: #fff;
+    height: 80px;
+    border-bottom: none;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+}
+
+.navbar-brand{
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.navbar-brand:hover,
+.navbar-brand,
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: #189A46;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item{
+    padding: 0 12px;
+    transition: all 0.5s ease;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    text-transform: capitalize;
+    padding: 14px 0;
+    font-size: 1.2em;
+    font-weight: 400;
+    position: relative;
+    color: #000c04;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link::before{
+    content: "";
+    width: 0;
+    background-color: #189A46;
+    height: 1px;
+    position: absolute;
+    bottom: 13px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover:before{
+    width: 100%;
+    
+}
+
+.navbar-expand-lg .navbar-nav .nav-item.active .nav-link{
+    color: #189A46;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link i{
+    font-size: 10px;
+    padding-left: 2px;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+.dropdown-toggle::after{
+    display: none;
+}
+
+/* start dark-mode-icon */
+
+.dark-mode{
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.navbar-expand-lg .dark-mode .moon-container{
+    padding: 0 24px;
+}
+
+.navbar-expand-lg .dark-mode i{
+    font-size: 24px;
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+}
+
+/* end dark-mode */
+
+
+
