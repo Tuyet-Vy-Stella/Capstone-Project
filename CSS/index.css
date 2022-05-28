@@ -51,10 +51,13 @@
 .header .container .navbar a:hover{
     color: #189a46;
 }
-.header .container .navbar i{
+.header .container .right i{
     font-size: 25px;
     color: #696969;
     transform: rotate(-30deg);
+}
+.header .container button{
+    display: none;
 }
 /* P.2: CAROUSEL */
 .carousel{
@@ -968,6 +971,9 @@
     display: flex;
     margin: 80px 0px;
 }
+.service-services .container .row .top{
+    display: flex;
+}
 .service-services .container .row-1 .col-right,
 .service-services .container .row-3 .col-right{
     padding: 45px 0px 45px 45px;
@@ -1012,7 +1018,10 @@
     color: #189a46;
     transition: all 0.5s;
 }
-
+.service-services .container .row-2 .bottom,
+.service-services .container .row-4 .bottom{
+    display: none;
+}
 
 /* BACK TO TOP */
 .cd-top{
@@ -1055,4 +1064,296 @@
             0 0 0 20px rgb(15 162 67 / 25%),
             0 0 0 40px rgb(50 100 245 / 0%);
     }
+}
+
+/* RESPONSIVE */
+
+/* Find method to make carousel's responsive */
+@media screen and (max-width: 992px){
+/* HEADER */
+.header{
+    top: 30px;
+}
+/* CAROUSEL */
+.carousel .carousel-inner .item-1,
+.carousel .carousel-inner .item-3{
+    margin-right: 150px;
+}
+.carousel .carousel-inner .item-2,
+.carousel .carousel-inner .item-4{
+    margin-left: 150px;
+}
+.carousel .carousel-inner h1{
+    font-size: 44px;
+}
+/* INTRO */
+.intro .container .text{
+    padding: 60px 20px;
+}
+/* REASONS TO CHOOSE */
+.reason .container .col-left .item{
+    padding: 80px 40px;
+}
+/* PET NUTRITION */
+.nutrition .container .bottom i{
+    top: 40%;
+}
+.nutrition .container{
+    padding: 60px 20px;
+}
+/* STAY UPDATED */
+.update .container{
+    padding: 60px;
+}
+/* CONTACT */
+.contact .container .row{
+    padding: 0px 25px;
+}
+.contact .container .col{
+    margin-right: 35px;
+}
+.contact .container .col-1{
+    width: 34%;
+}
+/* /SERVICES */
+.service-services .container .row-1 .col-right,
+.service-services .container .row-3 .col-right{
+    padding: 20px 0px 20px 45px;
+}
+.service-services .container .row-2 .col-left,
+.service-services .container .row-4 .col-left{
+    padding: 20px 45px 20px 0px;
+}
+.service-services .container p{
+    margin-bottom: 25px;
+}
+}
+
+@media screen and (max-width: 768px){
+/* HEADER */
+.header .container{
+    padding: 0px 15px;
+}
+.header .container .navbar .left{
+    display: none;
+}
+.header .container .navbar .right{
+    margin-left: 200px;
+}
+.header .container .right i{
+    transform: translateX(70px);
+}
+.header .container button{
+    display: block;
+}
+.header .container button i{
+    background-color: #189a46;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+/* CAROUSEL */
+.carousel-indicators{
+    margin-bottom: 0px;
+}
+.carousel .carousel-inner .item-1,
+.carousel .carousel-inner .item-3{
+    margin-right: 0;
+}
+.carousel .carousel-inner .item-2,
+.carousel .carousel-inner .item-4{
+    margin-left: 0;
+}
+.carousel .carousel-item .button button{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+/* ACTIVITIES */
+.activity .container .row .col{
+    width: 44%;
+}
+/* REASONS TO CHOOSE */
+.reason .container {
+    padding: 55px 0px;
+}
+.reason .container .row{
+    display: block;
+}
+.reason .container .row .col{
+    width: 100%;
+}
+.reason .container .col-left .item,
+.reason .container .col-right .item{
+    padding: 18px;
+    margin: 15px 0px;
+}
+.about-reason .container .row{
+    display: block;
+}
+.about-reason .container .col-left{
+    width: 100%;
+    text-align: left;
+}
+.about-reason .container .col-right{
+    width: 100%;
+    text-align: left;
+    margin-top: 50px;
+}
+.about-reason .container .col-right .content{
+    display: flex;
+}
+/* STATISTICS */
+.statistics .container .col{
+    flex: 1 0 50%;
+    margin: 25px 0px;
+}
+/* SERVICE FEE */
+.service-fee .container{
+    padding: 80px 30px;
+}
+.service-fee .container .row{
+    display: block;
+}
+.service-fee .container .row .col{
+    width: 100%;
+    margin-bottom: 35px;
+}
+.service-fee .container .col-2.active{
+    margin: 0px;
+    margin-bottom: 35px;
+}
+/* CONTACT */
+.update .container .bottom form{
+    width: 70%;
+}
+.contact .container .col h3{
+    font-size: 19px;
+}
+/* INTRO */
+.intro .container .text{
+    padding: 60px 0px;
+}
+.about-intro .container{
+    padding: 80px 17px;
+}
+.about-intro .container .row{
+    display: block;
+}
+.about-intro .container .col-left{
+    width: 100%;
+    transform:none;
+    margin-bottom: 25px;
+}
+.about-intro .container .col-right{
+    width: 100%;
+    padding-left: 12px;
+}
+.about-intro .container .col-right a{
+    margin: 25px 0px 0px;
+}
+/* HISTORY */
+.about-history .container .col-right{
+    width: 100%;
+}
+/* OUR TEAM */
+.about-team .container .col{
+    flex: 1 0 50%;
+    margin-bottom: 35px;
+}
+/* SERVICES */
+.service-services .container .row{
+    display: block;
+    margin: 20px 0px;
+}
+.service-services .container .col-left,
+.service-services .container .col-right{
+    width: 100%;
+}
+.service-services .container .row-1 .col-right,
+.service-services .container .row-3 .col-right{
+    padding: 45px 12px;
+}
+.service-services .container .row-3 .col-left{
+    padding: 45px 12px;
+}
+.service-services .container .row-2 .top,
+.service-services .container .row-4 .top{
+    display: none;
+}
+.service-services .container .row-2 .bottom,
+.service-services .container .row-4 .bottom{
+    display: block;
+}
+}
+@media screen and (max-width: 576px) {
+.header .container .right i{
+    transform: translateX(0px);
+}
+/* CAROUSEL */
+.carousel .d-md-block{
+    display: block!important;
+    padding: 0;
+}
+/* .carousel-caption{
+    bottom: 0;
+} */
+.carousel .carousel-inner .item{
+    margin: 0px;
+}
+.carousel .carousel-inner h1{
+    font-size: 33px;
+}
+.carousel .carousel-inner p{
+    font-size: 17px;
+    margin-bottom: 0px;
+}
+/* STAY UPDATED */
+.update .container{
+    padding: 60px 20px;
+}
+.update .container .bottom{
+    display: block;
+}
+.update .container .bottom form{
+    width: 100%;
+}
+.update .container .bottom button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+/* HISTORY */
+.about-history .container .row{
+    display: block;
+}
+.about-history .container .col-left,
+.about-history .container .col-right{
+    width: 100%;
+    padding-left: 12px;
+}
+/* REASON TO CHOOSE */
+.about-reason .container .col-right .content{
+    display: block;
+}
+.about-reason .container .col-right{
+    text-align: center;
+}
+/* CONTACT */
+.contact .container .row{
+    padding: 0px 17px;
+    margin: 0px;
+}
+.contact .container .col-1{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.contact .container .col-2,
+.contact .container .col-3,
+.contact .container .col-4{
+    width: 24%;
+}
 }
