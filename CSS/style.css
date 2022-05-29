@@ -801,7 +801,7 @@ footer{
     
     .navbar-nav{
         text-align: center;
-        width: 100%;
+        width: 80%;
         padding: 20px 0;
     }
 
@@ -824,7 +824,6 @@ footer{
 
     .dark-mode{
         position: absolute;
-        top: 19px;
         right: 50px;
     }
     /* header */
